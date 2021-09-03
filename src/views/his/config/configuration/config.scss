@@ -1,0 +1,557 @@
+.ml10 {
+    margin-left: 10px !important;
+}
+
+.mr10 {
+    margin-right: 10px !important;
+}
+
+.blue {
+    color: $blue;
+}
+
+.green {
+    color: $green;
+}
+
+.red {
+    color: $light-red;
+}
+
+.gray {
+    color: $third;
+}
+
+.content {
+    .el-button--primary {
+        span {
+            color: #fff;
+        }
+    }
+    // .his-module {}
+}
+
+.his-setting {
+    .el-form {
+        margin: 0 auto;
+        .el-form-item {
+            width: 50%;
+        }
+    }
+    .el-button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .gray {
+        span {
+            color: $third;
+        }
+    }
+    .row {
+        // justify-content: flex-start;
+        .form {
+            .el-form {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                .el-form-item {
+                    margin: 0 10px 0 16px;
+                }
+            }
+        }
+        .label {
+            .querySearch {
+                width: 350px;
+            }
+        }
+    }
+    .el-input {
+        background: none;
+        input {
+            padding: 0 8px;
+            height: 28px;
+            line-height: 28px;
+            border: 1px solid $third;
+            background: none;
+            .el-input__inner {
+                font-size: 14px;
+            }
+        }
+        .el-input__icon {
+            line-height: 28px;
+        }
+        input:focus,
+        input:hover {
+            background: none
+        }
+    }
+    .el-select {
+        .el-input {
+            background: none;
+            input {
+                border: 1px solid $third
+            }
+        }
+    }
+    // Select 模块
+    .select-list {
+        width: 100%;
+        .select-item {
+            position: relative;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 28px;
+            line-height: 28px;
+            .row-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    em,
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .icon {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                display: none
+            }
+            em {
+                height: 28px;
+                line-height: 28px;
+                display: inline-block;
+                color: $first;
+                text-transform: uppercase;
+            }
+        }
+        .select-item:hover {
+            background: rgba(40, 187, 255, .2)
+        }
+        .select-item:hover .icon {
+            display: block
+        }
+        .form {
+            margin: 0;
+            display: flex;
+            flex-flow: nowrap;
+            .tag {
+                padding: 0 8px;
+            }
+        }
+    }
+    // From 模块
+    .from-list {
+        ul {
+            li {
+                position: relative;
+                line-height: 24px;
+                display: flex;
+                flex-flow: wrap;
+                align-items: center;
+                .condition {
+                    width: 100%;
+                    display: flex;
+                }
+                em {
+                    margin-right: 4px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+                span {
+                    cursor: pointer;
+                    text-transform: uppercase;
+                }
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    padding: 1px;
+                    display: none;
+                    color: $third;
+                    font-size: 12px;
+                    font-weight: bold;
+                    display: none;
+                }
+                .icon:hover {
+                    color: #fff;
+                    background: $third;
+                }
+                .condition:hover,
+                .tableName:hover {
+                    color: #cde8ff;
+                }
+                .condition:hover .icon,
+                .tableName:hover .icon {
+                    display: block;
+                }
+            }
+            li:hover {
+                em {
+                    opacity: 1;
+                    color: $blue;
+                }
+                .icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown {
+    padding: 0 !important;
+}
+
+// 点击"+"以添加字段
+.his-row {
+    display: flex;
+    color: $third;
+}
+
+// 添加按钮
+button.add {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 16px;
+    line-height: 16px;
+    color: $white;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    background: $third;
+    border: 0;
+    border-radius: 2px;
+    span {
+        color: #fff !important;
+    }
+}
+
+.add:hover,
+.add:focus {
+    background: $third;
+}
+
+// popover 弹框 
+.from-box {
+    display: flex;
+    .el-tab-pane {
+        width: 320px;
+        height: 300px;
+        overflow-y: auto;
+    }
+}
+
+.tbl {
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+// 表达式
+.expression {
+    .el-input__inner {
+        height: 200px;
+        border: 0;
+    }
+}
+
+.el-popper {
+    padding: 10px;
+}
+
+// 样式
+.his-setting .el-switch__label {
+    position: absolute;
+    display: none;
+}
+
+
+/*打开时文字位置设置*/
+
+.his-setting .el-switch__label--right {
+    z-index: 1;
+    right: -10px;
+    span {
+        color: #fff !important;
+    }
+}
+
+
+/*关闭时文字位置设置*/
+
+.his-setting .el-switch__label--left {
+    z-index: 1;
+    left: 24px;
+    span {
+        color: #fff !important;
+    }
+}
+
+
+/*显示文字*/
+
+.his-setting .el-switch__label.is-active {
+    display: block;
+}
+
+.his-setting.el-switch .el-switch__core,
+.el-switch .el-switch__label {
+    width: 5\px !important;
+}
+
+// 联接方式
+.from-box {
+    .el-menu {
+        margin-right: 10px;
+        padding-right: 10px;
+        .el-menu-item {
+            padding: 10px 0 10px 10px !important;
+            width: 280px;
+            height: auto;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            white-space: normal;
+            span {
+                font-size: 14px;
+            }
+            p {
+                width: 200px;
+                font-size: 12px;
+                font-weight: normal;
+                word-break: break-all;
+                word-wrap: break-word;
+            }
+        }
+        .el-menu-item.is-active {
+            background: $light-blue;
+            border-radius: 0;
+        }
+    }
+}
+
+.style {
+    .el-menu {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}
+
+// 添加条件弹框
+.conditions {
+    height: 300px;
+    overflow: auto;
+}
+
+.condition-list {
+    ul {
+        li {
+            position: relative;
+            margin-bottom: 4px;
+            padding: 0 4px;
+            span {
+                color: $third;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+            em {
+                padding: 0 4px;
+                color: $light-blue;
+                cursor: pointer;
+            }
+            .icon {
+                position: absolute;
+                right: 4px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: none;
+            }
+        }
+        li:hover {
+            background: rgba(40, 187, 255, .2)
+        }
+        li:hover .icon {
+            display: block
+        }
+    }
+}
+
+// 表-值选择弹框
+.box {
+    position: fixed;
+    top: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    z-index: 999999;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+// FROM 模块 
+.from-popover {
+    .el-tab-pane:first-child {
+        height: 300px;
+        overflow-y: auto;
+    }
+}
+
+// ORDER BY模块
+.collapse-box {
+    height: 300px;
+    overflow: auto;
+    .collapse {
+        .table-name {
+            cursor: pointer;
+            text-transform: uppercase;
+            .icon {
+                margin-right: 4px;
+                font-size: 12px;
+            }
+        }
+    }
+    ul {
+        li {
+            padding-left: 20px;
+            width: 100%;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-sizing: border-box;
+        }
+    }
+    .height {
+        height: 0;
+    }
+}
+
+// Collapse 折叠面板
+.el-collapse {
+    height: 300px;
+    overflow-y: auto;
+    border: 0;
+    .el-collapse-item__header {
+        position: relative;
+        padding-left: 20px;
+        height: auto;
+        // line-height: 28px;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: 0;
+        .el-collapse-item__arrow {
+            position: absolute;
+            left: 0;
+        }
+    }
+    .el-collapse-item__content {
+        padding: 0;
+    }
+    .el-collapse-item__wrap {
+        border: 0;
+    }
+    .field-name {
+        padding: 0 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}
+
+// 排序
+.sort-condition {
+    position: relative;
+    padding: 0 10px;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    color: $first;
+    font-size: 14px;
+    text-transform: uppercase;
+    .tb-column,
+    .sort {
+        cursor: pointer;
+    }
+    .blue span {
+        color: $light-blue;
+    }
+    .icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+}
+
+.sort-condition:hover {
+    background: rgba(40, 187, 255, .2)
+}
+
+.sort-condition:hover .icon {
+    display: block
+}
+
+.wrap {
+    flex-flow: wrap;
+}
+
+sup {
+    top: -0.1em;
+    font-size: 12px;
+}
+
+sub {
+    bottom: -0.1em;
+    font-size: 12px;
+}
+
+// 比较运算符
+.operator {
+    overflow: hidden;
+    .symbol {
+        position: relative;
+        padding-left: 40px;
+        height: 24px;
+        line-height: 24px;
+        cursor: pointer;
+        .icon {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            color: $white;
+            text-align: center;
+            background: $light-blue;
+        }
+    }
+    .symbol:hover {
+        background: $light-blue;
+    }
+}
+
+// 添加条件
+.add-conditon {
+    cursor: pointer;
+}
+
+// sql语句预览
+.sql {
+    padding-bottom: 20px;
+    line-height: 24px;
+}

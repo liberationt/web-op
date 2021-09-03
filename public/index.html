@@ -1,0 +1,42 @@
+<!--
+ * @Author: wangyao
+ * @LastEditTime: 2021-04-06 20:41:40
+ * @LastEditors: Please set LastEditors
+ * @Description:
+ * @FilePath: \web-op\public\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=7200" />
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1698458_8z6zkqa7n6e.css"> -->
+    <title>
+        <%= webpackConfig.name %>
+    </title>
+    <!-- <script src="http://192.168.55.211/pic/region.js" type="text/javascript"></script> -->
+    <script src="http://47.101.150.111:2020/pic/region.js" type="text/javascript"></script>
+    <!-- 使用本地打印机 -->
+    <!-- <script src="http://localhost:8000/CLodopfuncs.js"></script> -->
+    <!-- 使用远程打印机 -->
+    <!-- <script src="http://192.168.4.253:8000/CLodopfuncs.js"></script> -->
+    <script>
+        // console.log("=========", dicdata.data)
+        localStorage.setItem('regionList', JSON.stringify(dicdata.data))
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please
+                enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

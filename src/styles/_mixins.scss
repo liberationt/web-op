@@ -1,0 +1,50 @@
+/* Mixins */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin normal-input {
+  height: 30px;
+  line-height: 30px;
+  background: $lightGray;
+  border: 0;
+}
+
+@mixin scroll-bar {
+  overflow: auto;
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 10px;
+        // background:#f00;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba($color: $disabled, $alpha: 0.8);
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        // background: #fff;
+    }
+}
+
+@mixin text-blue{
+  color: $blue!important;
+  font-family: "siyuanMedium";
+}
+
+@mixin text-red{
+  color: $red!important;
+  font-family: "siyuanMedium";
+}
+
+@mixin text-reds{
+  color: $light-red!important;
+  font-family: "siyuanMedium";
+}

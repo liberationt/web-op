@@ -1,0 +1,67 @@
+.el-button {
+    display: inline-flex;
+    flex-flow: nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+button .icon {
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+span {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.blue-btn {
+    background: $blue;
+    border-color: $blue;
+    border: 0;
+}
+
+.blue-btn:hover,
+.blue-btn:focus {}
+
+.green-btn {
+    background: $green;
+    border-color: $green;
+    border: 0;
+}
+
+.green-btn:hover,
+.green-btn:focus {}
+
+.blue-gra {
+    background: -webkit-linear-gradient(left, $blue, $light-blue);
+    background: -o-linear-gradient(right, $blue, $light-blue);
+    background: -moz-linear-gradient(right, $blue, $light-blue);
+    background: linear-gradient(to right, $blue, $light-blue);
+    border: 0;
+}
+
+.blue-gra:hover,
+.blue-gra:focus {
+    background: -webkit-linear-gradient(left, $ch-light-blue, $ch-blue);
+    background: -o-linear-gradient(right, $ch-light-blue, $ch-blue);
+    background: -moz-linear-gradient(right, $ch-light-blue, $ch-blue);
+    background: linear-gradient(to right, $ch-light-blue, $ch-blue);
+}
+
+.green-gra {
+    background: -webkit-linear-gradient(left, $green, $light-green);
+    background: -o-linear-gradient(right, $green, $light-green);
+    background: -moz-linear-gradient(right, $green, $light-green);
+    background: linear-gradient(to right, $green, $light-green);
+    border: 0;
+}
+
+.green-gra:hover,
+.green-gra:focus {
+    background: -webkit-linear-gradient(left, $ch-green, $ch-light-green);
+    background: -o-linear-gradient(right, $ch-green, $ch-light-green);
+    background: -moz-linear-gradient(right, $ch-green, $ch-light-green);
+    background: linear-gradient(to right, $ch-green, $ch-light-green);
+    border: 0;
+}

@@ -1,0 +1,92 @@
+.his-setting {
+    .row {
+        justify-content: flex-start;
+        .form {
+            .el-form {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                .el-form-item {
+                    margin: 0 10px 0 16px;
+                }
+            }
+        }
+    }
+    .el-input {
+        input {
+            height: 28px;
+            line-height: 28px;
+            border: 0;
+            background: none;
+        }
+        .el-input__icon {
+            line-height: 28px;
+        }
+        input:focus,
+        input:hover {
+            background: $white
+        }
+    }
+}
+
+// 样式
+.his-setting .el-switch__label {
+    position: absolute;
+    display: none;
+}
+
+
+/*打开时文字位置设置*/
+
+.his-setting .el-switch__label--right {
+    z-index: 1;
+    right: -10px;
+    span {
+        color: #fff !important;
+    }
+}
+
+
+/*关闭时文字位置设置*/
+
+.his-setting .el-switch__label--left {
+    z-index: 1;
+    left: 24px;
+    span {
+        color: #fff !important;
+    }
+}
+
+
+/*显示文字*/
+
+.his-setting .el-switch__label.is-active {
+    display: block;
+}
+
+.his-setting.el-switch .el-switch__core,
+.el-switch .el-switch__label {
+    width: 50px !important;
+}
+
+.content {
+    .his-module {
+        // form表单
+        .form {
+            .el-form {
+                margin: 0;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+                .el-form-item {
+                    width: calc(25% - 8px);
+                    display: flex;
+                    .el-form-item__content {
+                        margin: 0 !important;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

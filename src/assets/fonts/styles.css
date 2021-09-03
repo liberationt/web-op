@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'siyuanRegular';
+  src: url('./SourceHanSansCN-Regular.otf');
+}
+
+@font-face {
+  font-family: 'siyuanBold';
+  src: url('./SourceHanSansCN-Bold.otf');
+}
+
+@font-face {
+  font-family: 'siyuanMedium';
+  src: url('./SourceHanSansCN-Medium.otf'); 
+}
+
+@font-face {
+  font-family: 'siyuanHeavy';
+  src: url('./SourceHanSansCN-Heavy.otf');
+}

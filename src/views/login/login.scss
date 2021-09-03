@@ -1,0 +1,219 @@
+.login-container {
+    position: relative;
+    padding: 80px 90px 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url(../../assets/login-img/login.png) no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    // 医院信息
+    .hospital-info {
+        position: relative;
+        width: 700px;
+        display: block;
+        .hopspital-txt {
+            display: flex;
+            flex-flow: nowrap;
+            align-items: center;
+            .logo {
+                margin-right: 12px;
+                width: 36px;
+                height: 36px;
+            }
+            span {
+                // margin-left: 20px;
+                color: #fff;
+                font-size: 36px;
+                font-weight: bold;
+            }
+        }
+        .hopspital-txt span {
+            color: #fff;
+            font-size: 36px;
+        }
+        .hopspital-img {
+            position: relative;
+            // overflow: hidden;
+        }
+        .hopspital-img img {
+            border: 10px solid rgba(255, 255, 255, .3);
+            border-radius: 50%;
+        }
+        .hopspital-img img:nth-of-type(1) {
+            margin: 104px 0 0 30px;
+        }
+        .hopspital-img img:nth-of-type(2) {
+            position: absolute;
+            top: 75px;
+            left: 0;
+        }
+        .hopspital-img img:nth-of-type(3) {
+            position: absolute;
+            top: 50px;
+            left: 400px;
+        }
+        .hopspital-img img:nth-of-type(4) {
+            position: absolute;
+            top: 320px;
+            left: 385px;
+        }
+    }
+    // 登录信息
+    .login-box {
+        margin-top: 36px;
+        height: 100%;
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+    .login-form {
+        position: relative;
+        padding: 48px 40px;
+        width: 400px;
+        overflow: hidden;
+        align-self: flex-end;
+        background: #fff;
+        border-radius: 8px;
+        .el-form-item {
+            margin-bottom: 24px;
+            border-radius: 4px;
+            .el-form-item_box {
+                width: 100%;
+                display: flex;
+                background: $lightGray;
+            }
+            // CA认证、指纹
+            .el-button {
+                padding: 0;
+                color: #1485ff;
+                font-size: 12px;
+                background: -webkit-linear-gradient(left, #fcfcfd, #e5e7e7);
+                background: -o-linear-gradient(right, #fcfcfd, #e5e7e7);
+                background: -moz-linear-gradient(right, #fcfcfd, #e5e7e7);
+                background: linear-gradient(to right, #fcfcfd, #e5e7e7);
+                border: 1px solid $lightGray;
+                span {
+                    width: 48px;
+                    height: 48px;
+                    line-height: 48px;
+                }
+            }
+            .authentication {
+                margin-left: 8px;
+            }
+            .fingerprint {
+                .icon {
+                    margin-right: 0vh;
+                    font-size: 18px;
+                }
+            }
+            .el-form-item__content {
+                display: flex;
+                .el-select {
+                    width: 100%;
+                }
+                .el-input {
+                    display: inline-block;
+                    height: 47px;
+                    width: 100%;
+                    .el-input__inner {
+                        height: 48px;
+                        line-height: 48px;
+                        color: $first;
+                        background: $lightGray;
+                        border: 0;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            .el-button {
+                width: 47%;
+                padding: 0;
+                height: 48px;
+                line-height: 48px;
+                display: flex;
+                justify-content: center;
+                span {
+                    color: $white;
+                }
+            }
+        }
+        .remember-password {
+            margin-bottom: 24px;
+            .el-checkbox__label {
+                font-size: 12px;
+                color: $second;
+            }
+        }
+    }
+    .copyright {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 24px;
+        margin: 0;
+        color: #c8ebff;
+        font-size: 14px;
+        text-align: center;
+    }
+    .tips {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 10px;
+        span {
+            &:first-of-type {
+                margin-right: 16px;
+            }
+        }
+    }
+    .svg-container {
+        padding: 6px 5px 6px 15px;
+        color: $darkGray;
+        vertical-align: middle;
+        width: 30px;
+        display: inline-block;
+    }
+    .title-container {
+        position: relative;
+        .title {
+            font-size: 26px;
+            color: $lightGray;
+            margin: 0px auto 40px auto;
+            text-align: center;
+            font-weight: bold;
+        }
+        .set-language {
+            color: #fff;
+            position: absolute;
+            top: 3px;
+            font-size: 18px;
+            right: 0px;
+            cursor: pointer;
+        }
+    }
+    .show-pwd {
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        font-size: 16px;
+        color: $darkGray;
+        cursor: pointer;
+        user-select: none;
+    }
+    .thirdparty-button {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+    }
+    @media only screen and (max-width: 470px) {
+        .thirdparty-button {
+            display: none;
+        }
+    }
+}
